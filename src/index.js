@@ -16,30 +16,26 @@ ReactDOM.render(
 function Routes(){
   return (
   <Router>
-    <div>
+    <Skeleton>
       <Switch>
          <Route path="/begin">
-           <Skeleton>
-            <CluePage
-              clue={{
-                title: data.name,
-                text: data.landingPageText,
-                hint: data.landingPageHint,
-                answer: data.landingPageAnswer
-              }}
-              isLandingPage={true}
-            />
-           </Skeleton>
+          <CluePage
+            clue={{
+              title: data.name,
+              text: data.landingPageText,
+              hint: data.landingPageHint,
+              answer: data.landingPageAnswer
+            }}
+            isLandingPage={true}
+          />
          </Route>
          {Object.entries(data.clues).map(([clueSlug, clue], index) => (
           <Route path={`/${clueSlug}/`} key={`${index}`}>
-            <Skeleton>
-              <CluePage clue={clue} isLandingPage={false}/>
-            </Skeleton>
+            <CluePage clue={clue} isLandingPage={false}/>
           </Route>
          ))}
       </Switch>
-    </div>
+    </Skeleton>
   </Router>
   )
 }
