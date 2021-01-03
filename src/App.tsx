@@ -25,7 +25,7 @@ const theme = {
 };
 
 function App() {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState<string>("");
   return (
     <Grommet theme={theme} full>
       <Box
@@ -39,7 +39,8 @@ function App() {
           <Text>Description text about th</Text>
         </Box>
         <Form
-          onChange={nextValue => setValue(nextValue)}
+          // @ts-ignore
+          onChange={(nextValue: string) => setValue(nextValue)}
           onSubmit={event => console.log(event)}
           align='center'
         >
