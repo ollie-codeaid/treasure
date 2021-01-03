@@ -4,11 +4,14 @@
         "Some test data hunt description",
         "easy first question"
     ],
+    "landingPageHint": "You really shouldn't need a hint for this question!",
     "landingPageAnswer": "answer",
     "clues": {
         "answer": {
-            "clueText": [],
-            "clueAnswer": ""
+            "title": "Clue two",
+            "text": ["text", "text"],
+            "hint": "some hint",
+            "answer": "test-answer-two"
         }
     }
 }

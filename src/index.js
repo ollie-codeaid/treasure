@@ -1,16 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import CluePage from './pages/CluePage.tsx';
+
+import * as data from './data.json';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Routes />
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Routes(){
+  return (
+  <Router>
+    <div>
+      <Switch>
+         <Route path="/begin">
+           <CluePage
+             clue={{
+               title: data.name,
+               text: data.landingPageText,
+               hint: data.landingPageHint,
+               answer: data.landingPageAnswer
+             }}
+             isLandingPage={true}
+           />
+         </Route>
+         {Object.entries(data.clues).map(([clueSlug, clue], index) => (
+          <Route path={`/${clueSlug}/`} key={`${index}`}>
+            <CluePage clue={clue} isLandingPage={false}/>
+          </Route>
+         ))}
+      </Switch>
+    </div>
+  </Router>
+  )
+}
