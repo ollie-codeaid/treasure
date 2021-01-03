@@ -17,8 +17,8 @@ interface Props {
   isLandingPage: boolean
 }
 
-const answerIsCorrect = (answer: string, expectedAnswer: string): boolean => {
-  return answer.toLowerCase() === expectedAnswer.toLowerCase();
+const slugifyAnswer = (answer: string): string => {
+  return answer.toLowerCase().replaceAll(' ', '-');
 }
 
 function CluePage({clue, isLandingPage}: Props) {
@@ -27,8 +27,10 @@ function CluePage({clue, isLandingPage}: Props) {
   const [formSubmitted, setFormSubmitted] = useState<boolean>(false);
 
   if (formSubmitted) {
-    if (answerIsCorrect(value, clue.answer)) {
-      return <Redirect to={`/${clue.answer}/`}/>;
+    const slugAnswer = slugifyAnswer(value);
+
+    if (slugAnswer === clue.answer) {
+      return <Redirect to={`/${slugAnswer}/`}/>;
     } else {
       setFormError(clue.hint);
       setFormSubmitted(false);
