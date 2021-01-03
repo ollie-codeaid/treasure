@@ -1,0 +1,14 @@
+{
+    "name": "Test Data",
+    "landingPageText": [
+        "Some test data hunt description",
+        "easy first question"
+    ],
+    "landingPageAnswer": "answer",
+    "clues": {
+        "answer": {
+            "clueText": [],
+            "clueAnswer": ""
+        }
+    }
+}
