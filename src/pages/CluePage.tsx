@@ -59,19 +59,19 @@ function CluePage({clue, isLandingPage}: Props) {
         animation={{ type: boxFade, duration: duration }}
         align='center'
       >
-        <Box align='center' justify='center'>
+        <Box align='center'>
           {isLandingPage && (
             <Heading textAlign='center'>Welcome to the {clue.title} treasure hunt!</Heading>
           )}
           {clue.text.map((text: string, index: number) => (
             <Text key={`${index}`}>{text}</Text>
           ))}
-          <ClueForm
-            onSubmit={() => setFormSubmitted(true)}
-            setFormValues={setValueClearErrors}
-            formError={formError}
-          />
         </Box>
+        <ClueForm
+          onSubmit={() => setFormSubmitted(true)}
+          setFormValues={setValueClearErrors}
+          formError={formError}
+        />
       </Box>
     )
 }

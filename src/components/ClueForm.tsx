@@ -27,10 +27,12 @@ export default function ClueForm(props: Props) {
         </FormField>
         {props.formError && (
           <Box pad={{ horizontal: 'small' }}>
-            <Text color="status-error">{props.formError}</Text>
+            <Text color='status-error'>{props.formError}</Text>
           </Box>
         )}
-        <Button type='submit' label='submit' primary />
+        <Box align={'center'}>
+          <Button type='submit' label='Submit' primary/>
+        </Box>
       </Form>
     )
 }
