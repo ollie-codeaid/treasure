@@ -5,6 +5,7 @@ import CluePage from './pages/CluePage.tsx';
 import Skeleton from './skeleton/Skeleton.tsx';
 
 import * as data from './data.json';
+import WelcomePage from './pages/WelcomePage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,14 +25,10 @@ function Routes(){
           </Route>
          ))}
          <Route path="/">
-          <CluePage
-            clue={{
-              title: data.name,
-              text: data.landingPageText,
-              hint: data.landingPageHint,
-              answer: data.landingPageAnswer
-            }}
-            isLandingPage={true}
+          <WelcomePage
+            title={data.name}
+            text={data.landingPageText}
+            firstClueSlug={Object.keys(data.clues)[0]}
           />
          </Route>
       </Switch>
