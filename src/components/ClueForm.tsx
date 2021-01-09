@@ -23,11 +23,11 @@ export default function ClueForm(props: Props) {
         onSubmit={() => props.onSubmit()}
       >
         <FormField name='answer' required>
-          <TextInput name='answer' type='text' />
+          <TextInput name='answer' type='text' textAlign='center'/>
         </FormField>
         {props.formError && (
-          <Box pad={{ horizontal: 'small' }}>
-            <Text color='status-error'>{props.formError}</Text>
+          <Box pad={{ vertical: 'medium' }}>
+            <Text color='status-error' textAlign='center'>{props.formError}</Text>
           </Box>
         )}
         <Box align={'center'}>

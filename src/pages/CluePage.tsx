@@ -46,11 +46,6 @@ function CluePage({clue, isLandingPage}: Props) {
   const boxFade = answerCorrect ? 'fadeOut' : 'fadeIn';
   const duration = answerCorrect ? FADE_OUT : FADE_IN;
 
-  const setValueClearErrors = (value: string) => {
-    setFormError("");
-    setValue(value);
-  };
-
   return redirect ? (
     <Redirect to={`/${slugifyAnswer(value)}/`}/>
     ) : (
@@ -69,7 +64,7 @@ function CluePage({clue, isLandingPage}: Props) {
         </Box>
         <ClueForm
           onSubmit={() => setFormSubmitted(true)}
-          setFormValues={setValueClearErrors}
+          setFormValues={setValue}
           formError={formError}
         />
       </Box>
