@@ -18,7 +18,12 @@ function Routes(){
   <Router>
     <Skeleton>
       <Switch>
-         <Route path="/begin">
+         {Object.entries(data.clues).map(([clueSlug, clue], index) => (
+          <Route path={`/${clueSlug}/`} key={`${index}`}>
+            <CluePage clue={clue} isLandingPage={false}/>
+          </Route>
+         ))}
+         <Route path="/">
           <CluePage
             clue={{
               title: data.name,
@@ -29,11 +34,6 @@ function Routes(){
             isLandingPage={true}
           />
          </Route>
-         {Object.entries(data.clues).map(([clueSlug, clue], index) => (
-          <Route path={`/${clueSlug}/`} key={`${index}`}>
-            <CluePage clue={clue} isLandingPage={false}/>
-          </Route>
-         ))}
       </Switch>
     </Skeleton>
   </Router>

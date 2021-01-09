@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Grommet } from 'grommet';
+import { Box, Grommet } from 'grommet';
 
 const theme = {
   global: {
@@ -16,8 +16,10 @@ const theme = {
 };
 
 const Skeleton: React.FC<{}> = ({children}) => (
-  <Grommet theme={theme} full>
-    {children}
+  <Grommet theme={theme} full={true}>
+    <Box justify={"center"} fill={"vertical"}>
+      {children}
+    </Box>
   </Grommet>
 );
 
