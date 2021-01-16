@@ -25,7 +25,7 @@ function Routes(){
       <Switch>
          {Object.entries(data.clues).map(([clueSlug, clue], index) => (
           <Route path={`/${clueSlug}/`} key={`${index}`}>
-            <CluePage clue={clue} isLandingPage={false}/>
+            <CluePage clue={clue}/>
           </Route>
          ))}
          <Route path={`/${lastAnswerSlug}`}>

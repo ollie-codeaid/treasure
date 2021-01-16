@@ -14,15 +14,14 @@ interface Clue {
 }
 
 interface Props {
-  clue: Clue,
-  isLandingPage: boolean
+  clue: Clue
 }
 
 const slugifyAnswer = (answer: string): string => {
   return answer.toLowerCase().replaceAll(' ', '-');
 }
 
-function CluePage({clue, isLandingPage}: Props) {
+function CluePage({clue}: Props) {
   const [value, setValue] = useState<string>("");
   const [answerCorrect, setAnswerCorrect] = useState<boolean>(false)
   const [formError, setFormError] = useState<string>("");
@@ -53,9 +52,6 @@ function CluePage({clue, isLandingPage}: Props) {
         align='center'
       >
         <Box align='center'>
-          {isLandingPage && (
-            <Heading textAlign='center'>Welcome to the {clue.title} treasure hunt!</Heading>
-          )}
           {clue.text.map((text: string, index: number) => (
             <Text key={`${index}`} textAlign={'center'}>{text}</Text>
           ))}
