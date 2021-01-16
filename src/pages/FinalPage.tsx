@@ -18,7 +18,7 @@ function FinalPage({title, text}: Props) {
       <Box align='center'>
         <Heading textAlign='center'>{title} complete!</Heading>
         {text.map((text: string, index: number) => (
-          <Text key={`${index}`}>{text}</Text>
+          <Text key={`${index}`} textAlign={'center'}>{text}</Text>
         ))}
       </Box>
     </Box>

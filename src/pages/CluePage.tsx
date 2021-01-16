@@ -57,7 +57,7 @@ function CluePage({clue, isLandingPage}: Props) {
             <Heading textAlign='center'>Welcome to the {clue.title} treasure hunt!</Heading>
           )}
           {clue.text.map((text: string, index: number) => (
-            <Text key={`${index}`}>{text}</Text>
+            <Text key={`${index}`} textAlign={'center'}>{text}</Text>
           ))}
         </Box>
         <ClueForm
