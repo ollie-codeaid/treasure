@@ -36,11 +36,13 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
             <Text key={`${index}`} textAlign={'center'}>{text}</Text>
           ))}
         </Box>
-        <Button
-          onClick={() => setButtonClicked(true)}
-          label="Proceed"
-          primary
-        />
+        <Box align={'center'} pad={{vertical: 'large'}}>
+          <Button
+            onClick={() => setButtonClicked(true)}
+            label="Proceed"
+            primary
+          />
+        </Box>
       </Box>
     )
 }

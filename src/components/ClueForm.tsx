@@ -22,15 +22,15 @@ export default function ClueForm(props: Props) {
         onChange={(formValues) => props.setFormValues(formValues.answer)}
         onSubmit={() => props.onSubmit()}
       >
-        <FormField name='answer' required>
+        <FormField name='answer'>
           <TextInput name='answer' type='text' textAlign='center'/>
         </FormField>
         {props.formError && (
-          <Box pad={{ vertical: 'medium' }}>
+          <Box pad={{ vertical: 'small' }}>
             <Text color='status-error' textAlign='center'>{props.formError}</Text>
           </Box>
         )}
-        <Box align={'center'}>
+        <Box align={'center'} pad={{vertical: 'large'}}>
           <Button type='submit' label='Submit' primary/>
         </Box>
       </Form>
