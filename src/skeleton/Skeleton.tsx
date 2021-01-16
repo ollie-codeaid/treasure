@@ -8,7 +8,7 @@ const theme = {
       theme: '#660080',
     },
     font: {
-      family: 'Roboto',
+      family: 'Quattrocento Sans',
       size: '18px',
       height: '20px',
     },
