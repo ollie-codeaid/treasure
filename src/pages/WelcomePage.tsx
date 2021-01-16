@@ -40,6 +40,7 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
         <Button
           onClick={() => setButtonClicked(true)}
           label="Proceed"
+          primary
         />
       </Box>
     )
