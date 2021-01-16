@@ -6,6 +6,7 @@ import Skeleton from './skeleton/Skeleton.tsx';
 
 import * as data from './data.json';
 import WelcomePage from './pages/WelcomePage';
+import FinalPage from './pages/FinalPage';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -15,6 +16,9 @@ ReactDOM.render(
 );
 
 function Routes(){
+  const firstClueSlug = Object.keys(data.clues)[0];
+  const lastAnswerSlug = Object.values(data.clues).slice(-1)[0].answer;
+
   return (
   <Router>
     <Skeleton>
@@ -24,11 +28,17 @@ function Routes(){
             <CluePage clue={clue} isLandingPage={false}/>
           </Route>
          ))}
+         <Route path={`/${lastAnswerSlug}`}>
+          <FinalPage
+            title={data.name}
+            text={data.finalPageText}
+          />
+         </Route>
          <Route path="/">
           <WelcomePage
             title={data.name}
             text={data.landingPageText}
-            firstClueSlug={Object.keys(data.clues)[0]}
+            firstClueSlug={firstClueSlug}
           />
          </Route>
       </Switch>
