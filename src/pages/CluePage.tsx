@@ -4,6 +4,7 @@ import {Redirect} from 'react-router-dom';
 import {Box, Heading, Text} from 'grommet';
 
 import ClueForm from '../components/ClueForm';
+import { FADE_IN, FADE_OUT } from '../constants';
 
 interface Clue {
   title: string,
@@ -11,9 +12,6 @@ interface Clue {
   hint: string,
   answer: string
 }
-
-const FADE_OUT = 2000;
-const FADE_IN = 4000;
 
 interface Props {
   clue: Clue,

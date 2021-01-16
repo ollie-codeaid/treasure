@@ -1,8 +1,7 @@
 import React from 'react';
 
 import {Box, Heading, Text} from 'grommet';
-
-const FADE_IN = 4000;
+import { FADE_IN } from '../constants';
 
 interface Props {
   title: string,

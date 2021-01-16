@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {Redirect} from 'react-router-dom';
 
 import {Box, Button, Heading, Text} from 'grommet';
-
-const FADE_OUT = 2000;
+import { FADE_OUT } from '../constants';
 
 interface Props {
   title: string,
