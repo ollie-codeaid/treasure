@@ -31,7 +31,7 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
         align='center'
       >
         <Box align='center'>
-          <Heading textAlign='center'>Welcome to the {title} treasure hunt!</Heading>
+          <Heading textAlign='center' color='theme'>Welcome to the {title} treasure hunt!</Heading>
           {text.map((text: string, index: number) => (
             <Text key={`${index}`} textAlign={'center'}>{text}</Text>
           ))}
@@ -39,8 +39,7 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
         <Box align={'center'} pad={{vertical: 'large'}}>
           <Button
             onClick={() => setButtonClicked(true)}
-            label="Proceed"
-            primary
+            label="PROCEED"
           />
         </Box>
       </Box>

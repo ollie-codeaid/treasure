@@ -16,7 +16,7 @@ function FinalPage({title, text}: Props) {
       align='center'
     >
       <Box align='center'>
-        <Heading textAlign='center'>{title} complete!</Heading>
+        <Heading textAlign='center' color='theme'>{title} complete!</Heading>
         {text.map((text: string, index: number) => (
           <Text key={`${index}`} textAlign={'center'}>{text}</Text>
         ))}

@@ -13,6 +13,13 @@ const theme = {
       height: '20px',
     },
   },
+  button: {
+    border: {
+      radius: '18px',
+      color: 'theme'
+    },
+    color: 'theme'
+  }
 };
 
 const Skeleton: React.FC<{}> = ({children}) => (
