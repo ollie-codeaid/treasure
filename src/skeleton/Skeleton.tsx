@@ -5,9 +5,13 @@ import { Box, Grommet } from 'grommet';
 const theme = {
   global: {
     colors: {
-      theme: '#B7584C',
+      theme: '#9BADD7',
       background: '#FBF8F7',
-      highlight: '#8E6699'
+      highlight: '#8E6699',
+      text: {
+        "dark": "#f8f8f8", 
+        "light": "#333333"
+      }
     },
     focus: {
       border: {
