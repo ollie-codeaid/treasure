@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.js": "/treasure/static/js/main.f92528eb.chunk.js",
-    "main.js.map": "/treasure/static/js/main.f92528eb.chunk.js.map",
+    "main.js": "/treasure/static/js/main.ce8f281f.chunk.js",
+    "main.js.map": "/treasure/static/js/main.ce8f281f.chunk.js.map",
     "runtime-main.js": "/treasure/static/js/runtime-main.ffa30d66.js",
     "runtime-main.js.map": "/treasure/static/js/runtime-main.ffa30d66.js.map",
-    "static/js/2.04c1bc10.chunk.js": "/treasure/static/js/2.04c1bc10.chunk.js",
-    "static/js/2.04c1bc10.chunk.js.map": "/treasure/static/js/2.04c1bc10.chunk.js.map",
+    "static/js/2.3949236d.chunk.js": "/treasure/static/js/2.3949236d.chunk.js",
+    "static/js/2.3949236d.chunk.js.map": "/treasure/static/js/2.3949236d.chunk.js.map",
     "index.html": "/treasure/index.html",
-    "static/js/2.04c1bc10.chunk.js.LICENSE.txt": "/treasure/static/js/2.04c1bc10.chunk.js.LICENSE.txt"
+    "static/js/2.3949236d.chunk.js.LICENSE.txt": "/treasure/static/js/2.3949236d.chunk.js.LICENSE.txt",
+    "static/media/treasure.5db996af.png": "/treasure/static/media/treasure.5db996af.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ffa30d66.js",
-    "static/js/2.04c1bc10.chunk.js",
-    "static/js/main.f92528eb.chunk.js"
+    "static/js/2.3949236d.chunk.js",
+    "static/js/main.ce8f281f.chunk.js"
   ]
 }
