@@ -24,11 +24,11 @@ function Routes(){
     <Skeleton>
       <Switch>
          {Object.entries(data.clues).map(([clueSlug, clue], index) => (
-          <Route path={`/${clueSlug}/`} key={`${index}`}>
+          <Route path={`/treasure/${clueSlug}/`} key={`${index}`}>
             <CluePage clue={clue}/>
           </Route>
          ))}
-         <Route path={`/${lastAnswerSlug}`}>
+         <Route path={`/treasure/${lastAnswerSlug}`}>
           <FinalPage
             title={data.name}
             text={data.finalPageText}

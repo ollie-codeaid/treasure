@@ -44,7 +44,7 @@ function CluePage({clue}: Props) {
   const duration = answerCorrect ? FADE_OUT : FADE_IN;
 
   return redirect ? (
-    <Redirect to={`/${slugifyAnswer(value)}/`}/>
+    <Redirect to={`/treasure/${slugifyAnswer(value)}/`}/>
     ) : (
       <Box
         pad='large'

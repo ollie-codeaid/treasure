@@ -23,7 +23,7 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
   const duration = FADE_OUT;
 
   return redirect ? (
-      <Redirect to={`/${firstClueSlug}/`}/>
+      <Redirect to={`/treasure/${firstClueSlug}/`}/>
     ) : (
       <Box
         pad='large'
