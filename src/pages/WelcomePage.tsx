@@ -39,7 +39,7 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
         <Box align={'center'} pad={{vertical: 'large'}}>
           <Button
             onClick={() => setButtonClicked(true)}
-            label="PROCEED"
+            label='PROCEED?'
           />
         </Box>
       </Box>
