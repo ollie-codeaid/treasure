@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import {Redirect} from 'react-router-dom';
 
-import {Box, Button, Heading, Text} from 'grommet';
+import {Box, Button, Heading, Image, Text} from 'grommet';
 import { FADE_OUT } from '../constants';
+import treasureClosedPath from '../images/treasureClosed.png';
 
 interface Props {
   title: string,
@@ -35,6 +36,10 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
           {text.map((text: string, index: number) => (
             <Text key={`${index}`} textAlign={'center'}>{text}</Text>
           ))}
+          <Image
+            width='150px'
+            src={treasureClosedPath}
+          />
         </Box>
         <Box align={'center'} pad={{vertical: 'large'}}>
           <Button

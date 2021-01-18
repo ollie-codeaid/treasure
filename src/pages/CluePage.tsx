@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import {Redirect} from 'react-router-dom';
 
-import {Box, Text} from 'grommet';
+import {Box, Image, Text} from 'grommet';
 
 import ClueForm from '../components/ClueForm';
 import { FADE_IN, FADE_OUT } from '../constants';
+import mapPath from '../images/map.png';
 
 interface Clue {
   title: string,
@@ -51,6 +52,10 @@ function CluePage({clue}: Props) {
         animation={{ type: boxFade, duration: duration }}
         align='center'
       >
+        <Image
+          width='150px'
+          src={mapPath}
+        />
         <Box align='center'>
           {clue.text.map((text: string, index: number) => (
             <Text key={`${index}`} textAlign={'center'}>{text}</Text>

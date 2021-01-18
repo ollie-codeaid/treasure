@@ -18,13 +18,13 @@ function FinalPage({title, text}: Props) {
     >
       <Box align='center'>
         <Heading textAlign='center' color='theme'>{title} complete!</Heading>
+        {text.map((text: string, index: number) => (
+          <Text key={`${index}`} textAlign={'center'}>{text}</Text>
+        ))}
         <Image
           width='100px'
           src={treasurePath}
         />
-        {text.map((text: string, index: number) => (
-          <Text key={`${index}`} textAlign={'center'}>{text}</Text>
-        ))}
       </Box>
     </Box>
   )
