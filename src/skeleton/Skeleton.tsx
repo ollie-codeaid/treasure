@@ -5,9 +5,9 @@ import { Box, Grommet } from 'grommet';
 const theme = {
   global: {
     colors: {
-      theme: '#9BADD7',
-      background: '#FBF8F7',
-      highlight: '#8E6699',
+      theme: '#921D46',
+      background: '#ccc1b3',
+      highlight: '#1D050E',
       text: {
         "dark": "#f8f8f8", 
         "light": "#333333"
@@ -33,8 +33,10 @@ const theme = {
   }
 };
 
+const backgroundImageUrl = 'url(https://www.transparenttextures.com/patterns/fresh-snow.png)';
+
 const Skeleton: React.FC<{}> = ({children}) => (
-  <Grommet theme={theme} full={true} background={'background'}>
+  <Grommet theme={theme} full={true} background={{color: 'background', image: backgroundImageUrl, repeat: 'repeat', size: 'contain'}}>
     <Box justify={'center'} fill={'vertical'}>
       {children}
     </Box>
