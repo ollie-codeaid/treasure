@@ -39,7 +39,7 @@ function CluePage({clue}: Props) {
       setFormError(clue.hint);
       setFormSubmitted(false);
     }
-  }, [formSubmitted]);
+  }, [clue, value, formSubmitted]);
 
   const boxFade = answerCorrect ? 'fadeOut' : 'fadeIn';
   const duration = answerCorrect ? FADE_OUT : FADE_IN;
