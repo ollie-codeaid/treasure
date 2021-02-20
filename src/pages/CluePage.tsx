@@ -5,7 +5,7 @@ import {Box, Image, Text} from 'grommet';
 
 import ClueForm from '../components/ClueForm';
 import { FADE_IN, FADE_OUT } from '../constants';
-import mapPath from '../images/map.png';
+import mapPath from '../images/e1.png';
 
 interface Clue {
   title: string,
@@ -53,7 +53,7 @@ function CluePage({clue}: Props) {
         align='center'
       >
         <Image
-          width='150px'
+          width='300px'
           src={mapPath}
         />
         {clue.text.map((text: string, index: number) => (
