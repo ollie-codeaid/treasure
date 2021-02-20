@@ -31,7 +31,7 @@ export default function ClueForm(props: Props) {
           </Box>
         )}
         <Box align={'center'} pad={{vertical: 'large'}}>
-          <Button type='submit' label='SUBMIT?'/>
+          <Button type='submit' label='SUBMIT'/>
         </Box>
       </Form>
     )

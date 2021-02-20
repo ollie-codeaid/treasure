@@ -30,6 +30,7 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
         pad='large'
         animation={buttonClicked ? { type: 'fadeOut', duration: duration } : {}}
         align='center'
+        overflow='scroll'
       >
         <Box align='center'>
           <Heading textAlign='center' color='theme'>Welcome to the {title} treasure hunt!</Heading>
@@ -40,11 +41,9 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
             width='150px'
             src={treasureClosedPath}
           />
-        </Box>
-        <Box align={'center'} pad={{vertical: 'large'}}>
           <Button
             onClick={() => setButtonClicked(true)}
-            label='PROCEED?'
+            label='PROCEED'
           />
         </Box>
       </Box>

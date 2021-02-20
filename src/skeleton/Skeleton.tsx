@@ -19,7 +19,7 @@ const theme = {
       }
     },
     font: {
-      family: 'Quattrocento Sans',
+      family: 'Pirata One',
       size: '18px',
       height: '20px'
     },
