@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/treasure/static/js/main.9b516535.chunk.js",
-    "main.js.map": "/treasure/static/js/main.9b516535.chunk.js.map",
+    "main.js": "/treasure/static/js/main.c173c1bf.chunk.js",
+    "main.js.map": "/treasure/static/js/main.c173c1bf.chunk.js.map",
     "runtime-main.js": "/treasure/static/js/runtime-main.ffa30d66.js",
     "runtime-main.js.map": "/treasure/static/js/runtime-main.ffa30d66.js.map",
     "static/js/2.f5fb4f03.chunk.js": "/treasure/static/js/2.f5fb4f03.chunk.js",
     "static/js/2.f5fb4f03.chunk.js.map": "/treasure/static/js/2.f5fb4f03.chunk.js.map",
     "index.html": "/treasure/index.html",
     "static/js/2.f5fb4f03.chunk.js.LICENSE.txt": "/treasure/static/js/2.f5fb4f03.chunk.js.LICENSE.txt",
-    "static/media/map.38d92d71.png": "/treasure/static/media/map.38d92d71.png",
+    "static/media/e1.aaa370a6.png": "/treasure/static/media/e1.aaa370a6.png",
     "static/media/treasure.5db996af.png": "/treasure/static/media/treasure.5db996af.png",
     "static/media/treasureClosed.6b9631e6.png": "/treasure/static/media/treasureClosed.6b9631e6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ffa30d66.js",
     "static/js/2.f5fb4f03.chunk.js",
-    "static/js/main.9b516535.chunk.js"
+    "static/js/main.c173c1bf.chunk.js"
   ]
 }
