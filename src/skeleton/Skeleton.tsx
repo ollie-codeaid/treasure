@@ -6,7 +6,7 @@ const theme = {
   global: {
     colors: {
       theme: '#921D46',
-      background: '#ccc1b3',
+      background: '#f0dfc8',
       highlight: '#1D050E',
       text: {
         "dark": "#f8f8f8", 
