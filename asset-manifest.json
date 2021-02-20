@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/treasure/static/js/main.ea2677b1.chunk.js",
-    "main.js.map": "/treasure/static/js/main.ea2677b1.chunk.js.map",
+    "main.js": "/treasure/static/js/main.c3b7b1fa.chunk.js",
+    "main.js.map": "/treasure/static/js/main.c3b7b1fa.chunk.js.map",
     "runtime-main.js": "/treasure/static/js/runtime-main.ffa30d66.js",
     "runtime-main.js.map": "/treasure/static/js/runtime-main.ffa30d66.js.map",
     "static/js/2.f5fb4f03.chunk.js": "/treasure/static/js/2.f5fb4f03.chunk.js",
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.ffa30d66.js",
     "static/js/2.f5fb4f03.chunk.js",
-    "static/js/main.ea2677b1.chunk.js"
+    "static/js/main.c3b7b1fa.chunk.js"
   ]
 }
