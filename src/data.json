@@ -13,16 +13,18 @@
         "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     ],
     "clues": {
-        "answer": {
+        "intro": {
             "title": "Clue one",
             "text": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                "Thank you for accepting my challenge.",
+                "Throughout the hunt you will be asked a series of riddles. In order to find the treasure, you must correctly answer each riddle.",
+                "When you think you have the correct answer, type in the box below and press submit.",
+                "Type 'trap' in the box and hit submit to proceed."
             ],
-            "hint": "This is a hint",
-            "answer": "answer-one"
+            "hint": "Haha, you fell into my trap - the correct answer here is 'answer'. Be careful going forwards.",
+            "answer": "answer"
         },
-        "answer-one": {
+        "answer": {
             "title": "Clue two",
             "text": [
                 "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",

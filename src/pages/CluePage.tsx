@@ -5,7 +5,7 @@ import {Box, Image, Text} from 'grommet';
 
 import ClueForm from '../components/ClueForm';
 import { FADE_IN, FADE_OUT } from '../constants';
-import mapPath from '../images/e1.png';
+import mapPath from '../images/e12.png';
 
 interface Clue {
   title: string,
