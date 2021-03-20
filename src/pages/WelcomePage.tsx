@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Redirect} from 'react-router-dom';
 
-import {Box, Button, Heading, Image, Text} from 'grommet';
+import {Box, Button, Heading, Text} from 'grommet';
 import { FADE_OUT } from '../constants';
 
 interface Props {

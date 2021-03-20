@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Redirect} from 'react-router-dom';
 
-import {Box, Image, Text} from 'grommet';
+import {Box, Text} from 'grommet';
 
 import ClueForm from '../components/ClueForm';
 import { FADE_IN, FADE_OUT } from '../constants';
