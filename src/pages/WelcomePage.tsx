@@ -3,7 +3,6 @@ import {Redirect} from 'react-router-dom';
 
 import {Box, Button, Heading, Image, Text} from 'grommet';
 import { FADE_OUT } from '../constants';
-import treasureClosedPath from '../images/treasureClosed.png';
 
 interface Props {
   title: string,
@@ -33,17 +32,14 @@ function WelcomePage({title, text, firstClueSlug}: Props) {
         overflow='scroll'
       >
         <Box align='center'>
-          <Heading textAlign='center' color='theme'>Welcome to the {title} treasure hunt!</Heading>
+          <Heading textAlign='center' color='theme'>Greetings from the FUTURE</Heading>
           {text.map((text: string, index: number) => (
-            <Text key={`${index}`} textAlign={'center'}>{text}</Text>
+            <Text key={`${index}`} textAlign={'center'} margin={'xsmall'}>{text}</Text>
           ))}
-          <Image
-            width='150px'
-            src={treasureClosedPath}
-          />
-          <Button
+          <Button 
             onClick={() => setButtonClicked(true)}
             label='PROCEED'
+            margin={'medium'}
           />
         </Box>
       </Box>

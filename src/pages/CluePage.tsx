@@ -5,7 +5,6 @@ import {Box, Image, Text} from 'grommet';
 
 import ClueForm from '../components/ClueForm';
 import { FADE_IN, FADE_OUT } from '../constants';
-import mapPath from '../images/e12.png';
 
 interface Clue {
   title: string,
@@ -36,7 +35,12 @@ function CluePage({clue}: Props) {
       setAnswerCorrect(true);
       setTimeout(() => setRedirect(true), FADE_OUT);
     } else if (formSubmitted) {
-      setFormError(clue.hint);
+      if (slugAnswer) {
+        setFormError(clue.hint);
+      } else {
+        setFormError("You must submit an answer.")
+      }
+      
       setFormSubmitted(false);
     }
   }, [clue, value, formSubmitted]);
@@ -52,12 +56,8 @@ function CluePage({clue}: Props) {
         animation={{ type: boxFade, duration: duration }}
         align='center'
       >
-        <Image
-          width='300px'
-          src={mapPath}
-        />
         {clue.text.map((text: string, index: number) => (
-          <Text key={`${index}`} textAlign={'center'}>{text}</Text>
+          <Text key={`${index}`} textAlign={'center'} margin={'xsmall'}>{text}</Text>
         ))}
         <ClueForm
           onSubmit={() => setFormSubmitted(true)}

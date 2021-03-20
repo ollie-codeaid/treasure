@@ -5,12 +5,12 @@ import { Box, Grommet } from 'grommet';
 const theme = {
   global: {
     colors: {
-      theme: '#921D46',
-      background: '#f0dfc8',
-      highlight: '#1D050E',
+      theme: '#C2D4E2',
+      background: '#000305',
+      highlight: '#C2D4E2',
       text: {
-        "dark": "#f8f8f8", 
-        "light": "#333333"
+        "dark": "#E5E6E6", 
+        "light": "#E5E6E6"
       }
     },
     focus: {
@@ -19,10 +19,10 @@ const theme = {
       }
     },
     font: {
-      family: 'Pirata One',
+      family: 'Audiowide',
       size: '18px',
       height: '20px'
-    },
+    }
   },
   button: {
     border: {
@@ -33,10 +33,10 @@ const theme = {
   }
 };
 
-const backgroundImageUrl = 'url(https://www.transparenttextures.com/patterns/fresh-snow.png)';
+const backgroundImageUrl = 'url("https://www.transparenttextures.com/patterns/gplay.png")';
 
 const Skeleton: React.FC<{}> = ({children}) => (
-  <Grommet theme={theme} full={true} background={{color: 'background', image: backgroundImageUrl, repeat: 'repeat', size: 'contain'}}>
+  <Grommet theme={theme} full={true} background={{color: 'background', image: backgroundImageUrl, repeat: 'repeat', size: '200px'}}>
     <Box justify={'center'} fill={'vertical'}>
       {children}
     </Box>
