@@ -5,12 +5,11 @@ import {Box, Button, Heading, Text} from 'grommet';
 import { FADE_OUT } from '../constants';
 
 interface Props {
-  title: string,
   text: string[],
   firstClueSlug: string
 }
 
-function WelcomePage({title, text, firstClueSlug}: Props) {
+function WelcomePage({text, firstClueSlug}: Props) {
   const [buttonClicked, setButtonClicked] = useState<boolean>(false);
   const [redirect, setRedirect] = useState<boolean>(false);
 

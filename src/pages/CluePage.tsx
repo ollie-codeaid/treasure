@@ -7,7 +7,6 @@ import ClueForm from '../components/ClueForm';
 import { FADE_IN, FADE_OUT } from '../constants';
 
 interface Clue {
-  title: string,
   text: string[],
   hint: string,
   answer: string

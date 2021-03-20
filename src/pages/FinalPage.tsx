@@ -4,11 +4,10 @@ import {Box, Heading, Text} from 'grommet';
 import { FADE_IN } from '../constants';
 
 interface Props {
-  title: string,
   text: string[]
 }
 
-function FinalPage({title, text}: Props) {
+function FinalPage({text}: Props) {
   return (
     <Box
       pad='large'

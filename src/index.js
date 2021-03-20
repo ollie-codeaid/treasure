@@ -16,7 +16,7 @@ ReactDOM.render(
 );
 
 function Routes(){
-  const firstClueSlug = Object.keys(data.clues)[0];
+  const firstClueSlug = data.firstClue;
   const lastAnswerSlug = Object.values(data.clues).slice(-1)[0].answer;
 
   return (
@@ -30,13 +30,11 @@ function Routes(){
          ))}
          <Route path={`/treasure/${lastAnswerSlug}`}>
           <FinalPage
-            title={data.name}
             text={data.finalPageText}
           />
          </Route>
          <Route path="/">
           <WelcomePage
-            title={data.name}
             text={data.landingPageText}
             firstClueSlug={firstClueSlug}
           />
