@@ -15,7 +15,7 @@ function FinalPage({text}: Props) {
       align='center'
     >
       <Box align='center'>
-        <Heading textAlign='center' color='theme'>Test complete</Heading>
+        <Heading textAlign='center' color='theme'>You've uncovered the treasure!</Heading>
         {text.map((text: string, index: number) => (
           <Text key={`${index}`} textAlign={'center'} margin={'xsmall'}>{text}</Text>
         ))}

@@ -31,7 +31,7 @@ function WelcomePage({text, firstClueSlug}: Props) {
         overflow='scroll'
       >
         <Box align='center'>
-          <Heading textAlign='center' color='theme'>Greetings from the FUTURE</Heading>
+          <Heading textAlign='center' color='theme'>Ahoy there!</Heading>
           {text.map((text: string, index: number) => (
             <Text key={`${index}`} textAlign={'center'} margin={'xsmall'}>{text}</Text>
           ))}
