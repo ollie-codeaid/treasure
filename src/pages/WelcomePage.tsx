@@ -28,18 +28,25 @@ function WelcomePage({text, firstClueSlug}: Props) {
         pad='large'
         animation={buttonClicked ? { type: 'fadeOut', duration: duration } : {}}
         align='center'
-        overflow='scroll'
       >
-        <Box align='center'>
-          <Heading textAlign='center' color='theme'>Ahoy there!</Heading>
+        <Box align='center' margin={{"bottom":"medium"}}>
+          <Heading textAlign='center' color='theme' size={'large'}>Ahoy there!</Heading>
           {text.map((text: string, index: number) => (
-            <Text key={`${index}`} textAlign={'center'} margin={'xsmall'}>{text}</Text>
+            <Text 
+              key={`${index}`} 
+              textAlign={'center'} 
+              margin={'xsmall'}
+              size={'large'}
+            >
+              {text}
+            </Text>
           ))}
-          <Button 
-            onClick={() => setButtonClicked(true)}
-            label='PROCEED'
-            margin={'medium'}
-          />
+          <Box align={'center'} pad={{vertical: 'large'}}>
+            <Button
+              onClick={() => setButtonClicked(true)}
+              label='PROCEED'
+            />
+          </Box>
         </Box>
       </Box>
     )

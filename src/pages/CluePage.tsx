@@ -56,7 +56,14 @@ function CluePage({clue}: Props) {
         align='center'
       >
         {clue.text.map((text: string, index: number) => (
-          <Text key={`${index}`} textAlign={'center'} margin={'xsmall'}>{text}</Text>
+          <Text 
+            key={`${index}`} 
+            textAlign={'center'} 
+            margin={'xsmall'}
+            size={'large'}
+          >
+            {text}
+          </Text>
         ))}
         <ClueForm
           onSubmit={() => setFormSubmitted(true)}

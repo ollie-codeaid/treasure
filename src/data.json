@@ -1,37 +1,162 @@
 {
-    "name": "Lorem ipsum",
+    "name": "ANCESTRY DAY",
     "landingPageText": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "My name is (or was) Captain Yellow Mary Muir and if you are reading this you must have uncovered the first clue to my legendary bounty.",
+        "Presumably, you yourself are a pirate and no doubt have an insatiable desire for hoarding ill gotten riches. Given that I have now almost certainly been sleeping with the fishes for many high tides, I am prepared to assist you in locating my precious fortune. I will, however, not make it easy. You must earn your prize by proving that you are courageous, astute and have excellent navigation skills...",
+        "A true PIRATE!",
+        "If you are up to the challenge, confirm so by clicking 'PROCEED'."
     ],
+    "firstClue": "intro",
     "finalPageText": [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "HAHA!",
+        "You have fallen hook line and sinker for my nefarious plot.",
+        "Why on earth would I share my hard earned loot with you?",
+        "You are clearly no pirate! Although you must have a keen eye and a strong mind to have got this far, you are too generous, caring and kind of heart to survive in the ruthless world of the seven seas!",
+        "While I have led you on this merry dance of distraction I have been digging up the treasure for MYSELF!",
+        "By the time you return to Flatty I will have plundered and pillaged all that is rightfully mine.",
+        "Enjoy your baked consolation if you can!"
     ],
     "clues": {
         "intro": {
-            "title": "Clue one",
             "text": [
-                "Thank you for accepting my challenge.",
-                "Throughout the hunt you will be asked a series of riddles. In order to find the treasure, you must correctly answer each riddle.",
-                "When you think you have the correct answer, type in the box below and press submit.",
-                "Type 'trap' in the box and hit submit to proceed."
+                "AAARGH!",
+                "You think you have what it takes do you?",
+                "As mentioned before, there's no way I'm letting you get your hands on my beautiful treasure without you proving your worth.",
+                "I have left a series of puzzles for you to solve that will ultimately lead you to my buried hoard. Be warned though, this could be a dangerous adventure - for you.",
+                "If you're ready for your first clue, then type 'TRAP' and click submit below."
             ],
-            "hint": "Haha, you fell into my trap - the correct answer here is 'answer'. Be careful going forwards.",
-            "answer": "answer"
+            "hint": "Fooled SO easily! I'm starting to doubt you already. Type 'I AM A FOOL' to continue.",
+            "answer": "i-am-a-fool"
         },
-        "answer": {
-            "title": "Clue two",
+        "i-am-a-fool": {
             "text": [
-                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "A now ancient script resides within this very residence.",
+                "The script describes the beginnings of a superhuman partnership. I have hidden a cipher behind the document. Collect the cipher and use it to decode my first clue, hidden in the first seven characters of the title of the script itself."
             ],
-            "hint": "This is another hint",
-            "answer": "answer-two"
+            "hint": "Pathetic! Try again, but think harder this time!",
+            "answer": "pirates"
+        },
+        "pirates": {
+            "text": [
+                "I knew you had it in you!",
+                "The journey is only just beginning though.",
+                "Let's test your navigation skills.",
+                "Out along Cable Street is a beast watching over those travellers brave enough to use the pass through his gaze. What colour are the beast's eyes?"
+            ],
+            "hint": "Are you sure? This beast lives behind a venue where a beauty might sing with a crab...",
+            "answer": "orange"
+        },
+        "orange": {
+            "text": [
+                "The same beast is locked inside an old companion. Who was that loyal friend?"
+            ],
+            "hint": "Perhaps you've thinking of some other sea dog?",
+            "answer": "roxy"
+        },
+        "roxy": {
+            "text": [
+                "Take care you follow the next instructions carefully...",
+                "Head east to a line of choppers, glide through a garden and hop over a highway. Mosey past a pair of mosaics, fly by a fountain and set anchor at something slim.",
+                "Here awaits an archway adorned with the name of an old favourite dock for many a drunken sailor - what is its name?"
+            ],
+            "hint": "In the NARROW chance you get lost along the way, GORD ONly knows where you should go!",
+            "answer": "brewery-wharf"
+        },
+        "brewery-wharf": {
+            "text": [
+                "Is that the sound of the ocean that I can hear? Your sealegs should be feeling more settled now that we've arrived somewhere nautical.",
+                "I've positioned the next code visible only to sailors awaiting entrance to this plentiful marina.",
+                "Use the cipher to decode the five otherwise non-sensical characters on display."
+            ],
+            "hint": "answer",
+            "answer": "trust"
+        },
+        "trust": {
+            "text": [
+                "Legend has it that there is a wizard's tavern nearby. What funny bronze creature stands opposite?"
+            ],
+            "hint": "You must be more gormless than I thought - and this clue is less gormley than you thought!",
+            "answer": "herring-gull"
+        },
+        "herring-gull": {
+            "text": [
+                "March on to a bandstand and stop at its centre.",
+                "Face port side, then take 150 paces.",
+                "You should now stand at the corner of a regular weekend route of the highest quality. What is its name?"
+            ],
+            "hint": "Maybe you've not been running far enough...",
+            "answer": "el-classico"
+        },
+        "el-classico": {
+            "text": [
+                "Follow water now along a sharp and painful route - perfect for kayaks.",
+                "After passing below a railway, climb 8 steps then head for the building with a high flag.",
+                "What position does a familiar name hold here?"
+            ],
+            "hint": "Something blue could be the sign you need.",
+            "answer": "rector"
+        },
+        "rector": {
+            "text": [
+                "Inside the gates, a tall man stands alone with his hand high and his head down.",
+                "What great event does he remember?"
+            ],
+            "hint": "One word only.",
+            "answer": "war"
+        },
+        "war": {
+            "text": [
+                "Now steer back to London's oldest canal and turn starboard.",
+                "Pass under a shopping street, then travel in a straight line as far as possible without getting wet.",
+                "Stop on a skull.",
+                "One may find clean garments here. What are they?"
+            ],
+            "hint": "Have you looked up in a virtuous style?",
+            "answer": "pure-fashions"
+        },
+        "pure-fashions": {
+            "text": [
+                "Excellent work so far. I expect having been on the road for so long your stomach is now rumbling.",
+                "Make your way around the dirty monk and follow your nose to e5 Roast House. I have left you a parcel to collect there under my name.",
+                "Do not eat the bread yet.",
+                "Submit 'RETREIVED' when you're ready to continue."
+            ],
+            "hint": "Submit 'RETREIVED' when you're ready to continue.",
+            "answer": "retreived"
+        },
+        "retreived": {
+            "text": [
+                "STOP. EATING. THE. BREAD.",
+                "You'll risk mutiny if you leave your crew empty handed.",
+                "Head over Stinkhouse bridge and north up Upper North Street.",
+                "What nationality are the angels waiting at a junction with a west country passage?"
+            ],
+            "hint": "Was that clue too difficult PHO you?",
+            "answer": "vietnamese"
+        },
+        "vietnamese": {
+            "text": [
+                "You are starting to impress me.",
+                "Continue on this regular old dog all the way to a romantic green entrance.",
+                "You should now be at the home of the smallest creature of its kind on this island. What is the name of its only food source?"
+            ],
+            "hint": "Submit 'SOURDOUGH' when you're ready to continue.",
+            "answer": "kidney-vetch"
+        },
+        "kidney-vetch": {
+            "text": [
+                "My final clue!",
+                "Locate the tomb of my old associate Charlie Francis.",
+                "The enscription on the monolith should be enough to reveal exactly what you have been searching for.",
+                "You'll need a secondary cipher to decrypt this one.",
+                "INHOPE -> O",
+                "LREST -> X",
+                "MYFLE -> X",
+                "OSHAL -> Y",
+                "SHALS -> Y"
+            ],
+            "hint": "No help from me here...",
+            "answer": "noone"
         }
     }
 }
